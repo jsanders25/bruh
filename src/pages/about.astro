@@ -1,0 +1,20 @@
+---
+const pageName = 'YEAHAHAHA';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const professions = ['Developer', 'Designer', 'Writer', 'Artist'];
+---
+
+<BaseLayout pageName={pageName}>
+
+	<h2>About Me</h2>
+	<p>It's nice to meet you!</p>
+
+    <h3>Professions</h3>
+    <ul>
+    {
+        professions.map((profession) => (
+            <li>{profession}</li>
+        ))
+    }
+    </ul>
+</BaseLayout>
